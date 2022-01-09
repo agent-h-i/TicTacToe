@@ -352,16 +352,6 @@ int AiMove(char *gameBoard){
 
 
 
-/*//////////MINIMAX GAME THEORY EXPLANATION//////////
-In this game, the minimax algorithm is used to generate moves for the opponent player which will prevent the human player from winning.
-When the minimax function is called, it will check for a winning move (terminal state) in the current game and assign a score accordingly.
-In order for the AI to win, it should gain the highest possible score hence, making the best move accordingly.
-When the minmax function is called, the computer will play the tictactoegame against itself(based on the current board state) to obtain the highest score possible.
-In the game that the computer plays against itself(based on the current board state), there is a Maximising player (which aims to score the highest possible score) and a Minimizing player (the opponent, which aims to score the lowest possible score), and both these players play to win.
-Based on the game it plays, it will return the score of the Maximizing player which will be converted into the best move for the computer to make.
-//////////////////////////////////////////////////*/
-
-
 
 int minimax(char *gameBoard, int isMaximizing){
   int score;
